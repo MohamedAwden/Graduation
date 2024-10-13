@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,12 @@ class Login extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.brown,
-          title: const Text("Login"),
+          title: const Text("Register"),
         ),
         body: Column(
           children: [
             Text(
-              "login",
+              "Register",
               style: TextStyle(color: Colors.blue[900], fontSize: 18),
             ),
 

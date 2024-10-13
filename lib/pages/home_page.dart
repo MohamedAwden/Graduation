@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import 'package:salhani/core/constants/img_path.dart';
+import 'package:salhani/pages/register_screen.dart';
+import '../core/constants/constants.dart';
 import '../widgets/custom_bottom.dart';
 import 'login_page.dart';
 
@@ -12,17 +14,17 @@ class HomePage extends StatelessWidget {
       backgroundColor: kPrimaryColor,
      body:  Column(
        children: [
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
          CircleAvatar(
            radius: 80,
            backgroundColor: Colors.grey[600],
            child: CircleAvatar(
-             backgroundColor: Color(0xffC69696),
+             backgroundColor: const Color(0xffC69696),
              radius: 70,
              child: Image.asset(
-                'assets/images/1f6e0-fe0f.png',
+                ImagesPath.logo,
                 height: 100,
               ),
            ),
@@ -47,10 +49,10 @@ class HomePage extends StatelessWidget {
              ],
            ),
          ),
-         Spacer(
+         const Spacer(
            flex:1 ,
          ),
-         Center(
+         const Center(
            child: Text(
              "Choose right and save your time with salhani",
              style: TextStyle(
@@ -59,7 +61,7 @@ class HomePage extends StatelessWidget {
              ),
            ),
          ),
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
 
@@ -77,18 +79,28 @@ class HomePage extends StatelessWidget {
              fontSize: 16,
            ),
          ),
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
 
-         CustomBottom(text: 'Sign In',
+         CustomBottom(text: 'LogIn',
            onTap: () {
-             Navigator.push(context, MaterialPageRoute(builder: (cotext) {
-               return Login();
+             Navigator.push(context, MaterialPageRoute(builder: (context) {
+               return const Login();
              }));
            },
          ),
-         Spacer(
+         const Spacer(
+           flex: 1,
+         ),
+         CustomBottom(text: 'Register',
+           onTap: () {
+             Navigator.push(context, MaterialPageRoute(builder: (context) {
+               return const RegisterScreen();
+             }));
+           },
+         ),
+         const Spacer(
            flex: 1,
          ),
        ],
