@@ -10,7 +10,7 @@ class Login extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.brown,
-          title: Text("Login"),
+          title: const Text("Login"),
         ),
         body: Column(
           children: [
@@ -19,11 +19,11 @@ class Login extends StatelessWidget {
               style: TextStyle(color: Colors.blue[900], fontSize: 18),
             ),
 
-            Divider(
+            const Divider(
               height: 1,
               indent: 160,
               endIndent: 160,
-              color: const Color.fromARGB(255, 20, 66, 135),
+              color: Color.fromARGB(255, 20, 66, 135),
             ),
           ],
         ),

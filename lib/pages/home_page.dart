@@ -12,14 +12,14 @@ class HomePage extends StatelessWidget {
       backgroundColor: kPrimaryColor,
      body:  Column(
        children: [
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
          CircleAvatar(
            radius: 80,
            backgroundColor: Colors.grey[600],
            child: CircleAvatar(
-             backgroundColor: Color(0xffC69696),
+             backgroundColor: const Color(0xffC69696),
              radius: 70,
              child: Image.asset(
                 'assets/images/1f6e0-fe0f.png',
@@ -47,10 +47,10 @@ class HomePage extends StatelessWidget {
              ],
            ),
          ),
-         Spacer(
+         const Spacer(
            flex:1 ,
          ),
-         Center(
+         const Center(
            child: Text(
              "Choose right and save your time with salhani",
              style: TextStyle(
@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
              ),
            ),
          ),
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
 
@@ -77,18 +77,18 @@ class HomePage extends StatelessWidget {
              fontSize: 16,
            ),
          ),
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
 
          CustomBottom(text: 'Sign In',
            onTap: () {
              Navigator.push(context, MaterialPageRoute(builder: (cotext) {
-               return Login();
+               return const Login();
              }));
            },
          ),
-         Spacer(
+         const Spacer(
            flex: 1,
          ),
        ],
