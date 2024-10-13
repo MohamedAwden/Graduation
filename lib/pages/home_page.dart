@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import 'package:salhani/core/constants/img_path.dart';
+import '../core/constants/constants.dart';
 import '../widgets/custom_bottom.dart';
 import 'login_page.dart';
 
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
              backgroundColor: const Color(0xffC69696),
              radius: 70,
              child: Image.asset(
-                'assets/images/1f6e0-fe0f.png',
+                ImagesPath.logo,
                 height: 100,
               ),
            ),
