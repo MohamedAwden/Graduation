@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salhani/core/constants/img_path.dart';
+import 'package:salhani/pages/register_screen.dart';
 import '../core/constants/constants.dart';
 import '../widgets/custom_bottom.dart';
 import 'login_page.dart';
@@ -82,10 +83,20 @@ class HomePage extends StatelessWidget {
            flex: 1,
          ),
 
-         CustomBottom(text: 'Sign In',
+         CustomBottom(text: 'LogIn',
            onTap: () {
-             Navigator.push(context, MaterialPageRoute(builder: (cotext) {
+             Navigator.push(context, MaterialPageRoute(builder: (context) {
                return const Login();
+             }));
+           },
+         ),
+         const Spacer(
+           flex: 1,
+         ),
+         CustomBottom(text: 'Register',
+           onTap: () {
+             Navigator.push(context, MaterialPageRoute(builder: (context) {
+               return const RegisterScreen();
              }));
            },
          ),
