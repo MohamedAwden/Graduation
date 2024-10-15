@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:salhani/pages/home_page.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 void main() {
-  runApp(
-    Graduation(),
-  );
+  WidgetsFlutterBinding.ensureInitialized();
+  WakelockPlus.enable();
+  runApp(const Graduation());
 }
 
 class Graduation extends StatelessWidget {
@@ -12,7 +13,7 @@ class Graduation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
