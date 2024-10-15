@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomBottom extends StatelessWidget {
-  // ignore: use_key_in_widget_constructors
-  CustomBottom({required this.onTap, required this.text});
-  String text;
-  VoidCallback? onTap;
+  final String text;
+  final VoidCallback? onTap;
+  const CustomBottom({super.key, required this.onTap, required this.text});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:salhani/core/constants/img_path.dart';
 import 'package:salhani/pages/register_screen.dart';
-import '../core/constants/constants.dart';
+import '../core/constants/colors.dart';
 import '../widgets/custom_bottom.dart';
 import 'login_page.dart';
 
@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kPrimaryColor,
+      backgroundColor: AppColors.kPrimaryColor,
      body:  Column(
        children: [
          const Spacer(
@@ -19,9 +19,9 @@ class HomePage extends StatelessWidget {
          ),
          CircleAvatar(
            radius: 80,
-           backgroundColor: Colors.grey[600],
+           backgroundColor: AppColors.circleAvatarBorderColor,
            child: CircleAvatar(
-             backgroundColor: const Color(0xffC69696),
+             backgroundColor: AppColors.circleAvatarBackgroundColor,
              radius: 70,
              child: Image.asset(
                 ImagesPath.logo,
